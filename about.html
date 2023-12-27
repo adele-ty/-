@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>个人网站</title>
+    <script src="scripts/modernizr-1.6.min.js"></script>
+    <link rel="stylesheet" media="screen" href="styles/basic.css" charset="utf-8" />
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.jpg" alt="jipuli" />
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="photos.html">Photos</a></li>
+                <li><a href="live.html">Live</a></li>
+                <li><a href="calculator.html">Calculator</a></li>
+            </ul>
+        </nav>
+    </header>
+    <article>
+        <h1>About 吉卜力动画工作室</h1>
+        <div id="app">
+            <nav>
+                <ul>
+                    <li><a href="#gong" @click="change1">宫崎骏</a></li>
+                    <li><a href="#mi" @click="change2">米林宏昌</a></li>
+                </ul>
+            </nav>
+            <section id="gong" v-show="isShow1">
+                <h2>宫崎骏</h2>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1985年与高田勋、铃木敏夫共同创立吉卜力工作室。
+                    1986年执导《天空之城》，该片获得第41回每日电影奖大藤信郎赏等6项大奖。
+                    1988年执导《龙猫》，该片荣获第13回报知电影奖最佳导演奖等24项大奖。
+                    1997年执导《幽灵公主》，该片荣获第21届日本电影学院奖最佳影片奖等27项大奖。
+                    2001年执导《千与千寻》，该片荣获第75届奥斯卡金像奖最佳动画长片奖、第52届柏林国际电影节金熊奖等9项大奖。
+                    2004年执导《哈尔的移动城堡》，该片荣获第9届好莱坞电影奖最佳动画片奖等8项大奖。
+                </p>
+            </section>
+            <section id="mi" v-show="isShow2">
+                <h2>米林宏昌</h2>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1996年至2014任职于吉卜力工作室，导演了《借东西的小人阿莉埃蒂》和《回忆中的玛妮》两部作品，
+                    并在宫崎骏执导的《千与千寻》、《哈尔的移动城堡》、《悬崖上的金鱼公主》等作品中担任了原画的工作。
+                    2014年底离开吉卜力工作室，并与西村义明创办Studio Ponoc，执导的新作《玛丽与魔女之花》于2017年上映。
+                    2011年获得日本电影学院奖（日本奥斯卡）最佳动画电影奖，2016年获得奥斯卡金像奖最佳动画长片提名。
+                </p>
+            </section>
+        </div>
+    </article>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        var app = new Vue({
+            el: "#app",
+            data: {
+                isShow1: false,
+                isShow2: false
+            },
+            methods: {
+                change1: function () {
+                    this.isShow1 = !this.isShow1;
+                },
+                change2: function () {
+                    this.isShow2 = !this.isShow2;
+                }
+            }
+        })
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="scripts/global.js"></script>
+</body>
+
+</html>

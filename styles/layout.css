@@ -1,0 +1,162 @@
+section,
+header,
+article,
+nav {
+    display: block;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 1em 10%;
+    background-image: url(../images/background.jpg);
+    /*
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    */
+    background-attachment: fixed;
+    background-position: top left;
+    background-repeat: repeat-x;
+    max-width: 80em;
+}
+
+header {
+    background-image: url(../images/character.jpg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    border-width: .1em;
+    border-style: solid;
+    border-bottom-width: 0;
+}
+
+header nav {
+    background-image: url(../images/navbar.gif);
+    background-repeat: repeat-x;
+    background-position: bottom left;
+    border-width: .1em;
+    border-style: solid;
+    border-bottom-width: 0;
+    border-top-width: 0;
+    padding-left: 10%;
+}
+
+header nav ul {
+    width: 100%;
+    overflow: hidden;
+    border-left-width: .1em;
+    border-left-style: solid;
+}
+
+header nav li {
+    display: inline;
+}
+
+header nav li a {
+    display: block;
+    float: left;
+    padding: .5em 2em;
+    border-right: .1em solid;
+}
+
+article {
+    border-width: .1em;
+    border-style: solid;
+    border-top-width: 0;
+    padding: 2em 10%;
+    line-height: 1.8em;
+}
+
+article img {
+    border-width: .1em;
+    border-style: solid;
+    outline-width: .1em;
+    outline-style: solid;
+}
+
+#home header {
+    background-image: url(../images/11.jpg);
+    background-position: top right;
+}
+
+#about header {
+    background-image: url(../images/22.jpg);
+    background-position: top right;
+}
+
+#photos header {
+    background-image: url(../images/33.jpg);
+    background-position: top right;
+}
+
+#live header {
+    background-image: url(../images/66.jpg);
+    background-position: top right;
+}
+
+#calculator header {
+    background-image: url(../images/55.jpg);
+    background-position: top right;
+}
+
+#slideshow {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+}
+
+#preview {
+    position: absolute;
+    border-width: 0;
+    outline-width: 0;
+}
+
+#imagegallery li {
+    display: inline;
+}
+
+td {
+    padding: .5em 3em;
+}
+
+label {
+    display: block;
+}
+
+fieldset {
+    border: 0;
+}
+
+#cal {
+    border: solid 1px;
+    width: 300px;
+    height: 360px;
+    background-color: bisque;
+    text-align: center;
+    border-radius: 10px;
+    margin: auto;
+    /*控制页面是否居中显示，如果为居中显示，那么就会用auto*/
+    margin-top: 50px;
+}
+
+/*设置文本框样式*/
+#data {
+    width: 280px;
+    height: 30px;
+    background-color: white;
+    font-size: 15px;
+    margin-top: 15px;
+    margin-left: 6.5px;
+}
+
+/*设置按钮的样式*/
+input[type=button] {
+    width: 55px;
+    height: 55px;
+    font-size: 25px;
+    margin: 5px;
+    background-color: #ccc;
+}
